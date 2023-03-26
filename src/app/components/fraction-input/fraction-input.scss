@@ -1,0 +1,62 @@
+.fraction-input {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: 50px 50px auto;
+  gap: 10px;
+  color: aliceblue;
+  font-size: 24px;
+
+  &__number {
+    grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    border-radius: 8px;
+  }
+
+  &__number-title {
+    font-size: 48px;
+  }
+
+  &__label-numerator {
+    padding: 12px;
+    background-color: darkkhaki;
+    border-radius: 8px 0 0 8px;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  &__label-denominator {
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+    background-color: darksalmon;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  &__numerator {
+    color: aliceblue;
+    padding: 12px;
+    border: 0;
+    outline: none;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background-color: darkkhaki;
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  &__denominator {
+    color: aliceblue;
+    padding: 12px;
+    border: 0;
+    outline: none;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background-color: darksalmon;
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  &__fraction {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+}

@@ -1,0 +1,31 @@
+.fraction {
+
+  &__numerator {
+    background-color: coral;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  &__denominator {
+    background-color: cornflowerblue;
+    border-radius: 8px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+  }
+
+  &__part {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid crimson;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
